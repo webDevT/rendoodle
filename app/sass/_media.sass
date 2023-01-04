@@ -1,0 +1,132 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.menu__item
+		margin-left: 25px
+	.languages 
+		margin-left: 25px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.menu 
+		display: none
+	.menu__btn 
+		cursor: pointer
+		margin-left: 25px
+	.menu__row 
+		width: 25px 
+		height: 3px 
+		margin-bottom: 4px
+		background: $text-color
+	.menu__row:last-child 
+		margin-bottom: 0
+	.menu.active 
+		background: #eaebec 
+		position: absolute 
+		top: 100% 
+		left: 0 
+		width: 100%
+		display: block	
+		padding-bottom: 25px
+		ul 
+			flex-direction: column
+			align-items: flex-start	
+	.menu__item 
+		margin-top: 15px
+	.menu__btn.active 
+		.menu__row:last-child 
+			display: none
+		.menu__row:first-child
+			transform: rotate(45deg) 
+			margin-bottom: 0
+			position: relative
+			top: 3px
+		.menu__row:nth-child(2)
+			transform: rotate(-45deg) 
+			margin-bottom: 0
+	.menu__row
+		transition: all 0.3s
+			
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.logo 
+		img 
+			max-width: 35vw
+	.menu__btn  
+		margin-left: 5vw
+	.languages 
+		margin-left: 5vw
+	.line 
+		padding: 0 4px
+	.header-content 
+		padding-top: 15px 
+		padding-bottom: 15px
+	.top-header 
+		padding: 7px 0
+	body 
+		font-size: 16px
+	.main-screen
+		margin-top: 38px
+	.main-screen 
+		padding-top: 109px
+		padding-bottom: 290px
+		.h2,
+		.sub-title
+			text-shadow: 1px 1px 2px #fff
+	.h2 
+		font-size: 40px 
+		line-height: 1.2
+		margin-bottom: 25px
+	.sub-title 
+		font-size: 20px 
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
