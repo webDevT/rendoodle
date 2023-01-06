@@ -23,27 +23,6 @@ $(window).scroll(function() {
 
 });
 
-//start slider init 
-$('.slider').slick({
-    centerMode: true,
-    centerPadding: '20vw',
-    slidesToShow: 1,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '10vw',
-        }
-      }
-     
-    ]
-  });
-//end slider init
 
 //start floorplan tabs
 $(function(){
