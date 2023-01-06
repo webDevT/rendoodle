@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -90,7 +90,10 @@
 <div class="reno-flow">
 	
 		<div class="container-fluid">
-			<div class="reno-title">What type of deck/patio <br>	project do you have? 
+			<div class="reno-title">Enter your information!
+			</div>
+			<div class="sm-text sm-text--sub">
+				Enter your information or, if you already have an account with us, <a href="">log in here </a>before continuing.
 			</div>
 
 			<div class="group-of-blocks">
@@ -224,7 +227,86 @@
 				</div>
 
 				<div class="group-of-blocks__content">
-					oi
+					<form class="customer-details-form">
+						<div class="form-row form-row--two">
+							<input type="text" class="input" placeholder="First Name*">
+							<input type="text" class="input" placeholder="Last Name*">
+						</div>
+
+						<div class="form-row">
+							<input type="text" class="input" placeholder="Street Address*">
+						</div>
+
+						<div class="form-row">
+							<input type="text" class="input" placeholder="City*">
+						</div>
+
+						<div class="form-row form-row--two">
+							<input type="text" class="input" placeholder="Province*">
+							<input type="text" class="input" placeholder="L4B 0G9">
+						</div>
+
+						<div class="form-row">
+							<input type="text" class="input" placeholder="Email Address*">
+						</div>
+
+						<div class="form-row">
+							<input type="text" class="input" placeholder="Phone*">
+						</div>
+
+						<div class="form-row selects--row">
+
+							<div class="select-wrapper">
+								<label for="" class="label">
+									Preferred contact method:*
+								</label>
+								<select class="select">
+								<option disabled selected>Select One</option>
+								<option value="1">Phone</option>
+								<option value="2">Email</option>
+							</select>
+							</div>
+
+							<div class="select-wrapper">
+								<label for="" class="label">
+									Preferred contact time:*
+								</label>
+								<select class="select">
+								<option disabled selected>Select One</option>
+								<option value="1">8.00 - 14.00</option>
+								<option value="2">14.00 - 18.00</option>
+							</select>
+							</div>
+							
+						</div>
+
+						<div class="form-row">
+							<div class="price-slider-wrapper">
+								<div id="price-slide"></div>
+								<div class="price-slider__footer">
+									<div class="price-slider__item">
+										Economical
+									</div>
+									<div class="price-slider__item">
+										Premium
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="checkbox-wrapper">
+							<input type="checkbox" id="agree" class="checkbox">
+							<label for="agree" class="checkbox-label"><span></span></label>
+
+							<label for="agree" class="agree-text">
+								I agree to the Rendoodle Terms and Conditions. I acknowledge that the use of my postal code is for the purpose of filtering the closest retail store to my location.
+							</label>
+						</div>
+
+						<button class="button">
+							Submit
+						</button>
+					</form>
 				</div>
 
 			</div>
@@ -349,7 +431,18 @@
 	src="https://code.jquery.com/jquery-3.6.3.min.js"
 	integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 	crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script>
+		$( function() {
+		  $( "#price-slide" ).slider({
+			value: 60,
+			orientation: "horizontal",
+			range: "min",
+			animate: true
+		  });
+		 
+		} );
+	</script>
 	<script src="js/main.js"></script>
 <!-- end scripts -->
 </body>
