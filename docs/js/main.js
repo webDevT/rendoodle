@@ -33,3 +33,29 @@ $(function(){
 }).eq(0).addClass("active");
 });
 //end floorplan tabs
+
+//start product tabs
+$(function(){
+	$(".product-tab").click(function() {
+	$(".product-tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".product-tab-item").removeClass("active").eq($(this).index()).addClass("active");
+ 	$(".product-tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+});
+//end product tabs
+
+//start product tabs
+$(function(){
+	$(".product-card-tab").click(function() {
+	$(".product-card-tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".product-card-tab-item").removeClass("active").eq($(this).index()).addClass("active");
+ 	$(".product-card-tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+});
+//end product tabs
+
+$('[data-fancybox="gallery"]').fancybox({
+    transitionEffect: "fade",
+    transitionDuration: 0,
+  
+  });
