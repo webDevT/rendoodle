@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <filter id="Oval_Copy" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H16V13H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="tw3" transform="translate(4.5 -36.5)">
+    <g transform="matrix(1, 0, 0, 1, -4.5, 36.5)" filter="url(#Oval_Copy)">
+      <circle id="Oval_Copy-2" data-name="Oval Copy" cx="15.5" cy="15.5" r="15.5" transform="translate(4.5 3.5)" fill="#fff"/>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(8 49)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H16V13H0Z" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M16,1.539a6.56,6.56,0,0,1-1.885.517A3.292,3.292,0,0,0,15.555.24a6.572,6.572,0,0,1-2.084.8A3.285,3.285,0,0,0,7.878,4.03,9.317,9.317,0,0,1,1.114.6,3.285,3.285,0,0,0,2.129,4.982,3.269,3.269,0,0,1,.643,4.572c0,.014,0,.027,0,.041A3.284,3.284,0,0,0,3.275,7.831a3.29,3.29,0,0,1-1.482.056,3.285,3.285,0,0,0,3.066,2.279,6.584,6.584,0,0,1-4.076,1.4A6.657,6.657,0,0,1,0,11.525,9.289,9.289,0,0,0,5.031,13a9.274,9.274,0,0,0,9.338-9.338q0-.213-.01-.425A6.667,6.667,0,0,0,16,1.539" fill="#a1aab1"/>
+      </g>
+    </g>
+  </g>
+</svg>
