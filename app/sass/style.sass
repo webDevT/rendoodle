@@ -77,11 +77,13 @@ a:hover
 .menu__link 
     color: $text-color
    
-.menu__link:hover 
-   text-shadow: -0.4px 0 $text-color, 0 0.4px $text-color, 0.4px 0 $text-color, 0 -0.4px $text-color
+.menu__link:hover
+   text-shadow: -0.4px 0 $text-color, 0 0.4px $text-color
    color: $text-color
-
-
+.menu__link.active
+    font-weight: 500
+.menu__link.active:hover
+    text-shadow: none
 .sign-in 
     font-weight: 500
 .languages
